@@ -1,14 +1,15 @@
 
-const form = document.querySelector("form")
+const frm = document.querySelector("form")
 const resp1 = document.querySelector("#outResp1")
 const resp2 = document.querySelector("#outResp2")
 
 
-let numContas = 0 // declara e inicializa contador...
-let valTotal = 0 //... e acumulador (variáveis globais)
-let resposta = "" /// string com a resposta a ser exibida
+let numContas = 0 
+let valTotal = 0 
+let resposta = "" 
 
 frm.addEventListener("submit", (e) => {
+
     e.preventDefault()
 
     const descrição = frm.inDescrição.value
@@ -26,11 +27,7 @@ frm.addEventListener("submit", (e) => {
 
     frm.inDescrição.value = ""
     frm.inValor.value = ""
-    frm.inDescrição.focus ()
-
-
-
-
-)}
+    frm.inDescrição.focus()
+ })
  
  
